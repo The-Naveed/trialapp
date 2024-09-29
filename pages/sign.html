@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/sign.css">
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bold_B_icon_green.svg/1024px-Bold_B_icon_green.svg.png">
+    <title>Sign up - The Blogging App</title>
+</head>
+
+<body id="body">
+    <section class="sign" align="center">
+        <form class="container">
+            <h3>The Blogging App</h3>
+            <hr>
+            <h6>Sign up to see photos and videos<br>from your friends</h6><br>
+            <h6 class="error1" id="error1">
+                Email or number not found
+            </h6>
+            <input type="email" class="form-control mb-3" id="mail" placeholder="Phone number, username or email">
+            <h6 class="error2" id="error2">
+                First name not found
+            </h6>
+            <input type="text" class="form-control mt-0 mb-3" id="first" placeholder="First name">
+            <h6 class="error3" id="error3">
+                Last name not found
+            </h6>
+            <input type="text" class="form-control mt-0 mb-3" id="last" placeholder="Last name">
+            <h6 class="error4" id="error4">
+                Password not found
+            </h6>
+            <input type="password" class="form-control mt-0" id="pass" placeholder="Password">
+            <div class="mt-3" align="left">
+                + Upload your profile picture
+                <input type="file" id="load" placeholder="">
+            </div>
+            <h2>By signing up, you agree to our Terms, Privacy Policy and Cookies Policy.</h2><br>
+            <button type="button" class="btn btn-primary" onclick="sign()">Sign up</button><br><br>
+            <hr>
+            <h6>Have an account?</h6>
+            <button type="button" class="btn btn-light" onclick="log()">Log in</button>
+        </form><br><br>
+        <h6>Get the app:</h6>
+        <div class="image">
+            <div class="app"><img onclick="goo()" src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png"
+                    alt="Appstore" height="40px"></div>
+            <div class="mic"><img onclick="mic()" src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png"
+                    alt="Microsoft" height="40px"></div>
+        </div>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+<script src="../script/sign.js" type="module"></script>
+
+
+</html>

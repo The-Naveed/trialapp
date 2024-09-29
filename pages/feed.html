@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/feed.css">
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bold_B_icon_green.svg/1024px-Bold_B_icon_green.svg.png">
+    <title>Home - The Blogging App</title>
+</head>
+
+<body>
+    <navbar>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <h3>The Blogging App</h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#"><button onclick="shift()" class="btn btn-light">Create
+                                Post</button></a>
+                        <a class="nav-link" href="#"><button class="btn btn-light">About app</button></a>
+                        <a class="nav-link" href="#"><button class="btn btn-warning" onclick="logout()">Logout</button></a>
+                        <a class="nav-link" href="#"><button class="btn btn-danger">Delete Account</button></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </navbar>
+
+
+    <section align="center">
+        <div class="usersec">
+            <div class="">
+                <img style="border-radius:50%;" height="150px" id="img"
+                    src=""
+                    alt="Profile picture">
+            </div>
+            <div class="">
+                <h3><span>Welcome! </span><span id="name"></span></h3>
+                <span id="time"></span>
+            </div>
+        </div>
+    </section>
+    <br>
+
+    <div id="carouselExampleInterval" class="carousel slide p-0 m-0 h-30" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="https://images.olx.com.pk/thumbnails/433213880-800x600.webp" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://images.olx.com.pk/thumbnails/489257159-800x600.webp" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div><br>
+
+    <!-- <section class="container mian">
+
+        <div id="blogs" class="row row-cols-2 row-cols-sm-2 row-cols-md-4 m-0 p-0 gap-5">
+            <div class="card" style="width: 30rem;">
+                <div class="card-body">
+                    <h5 class="card-title"> <img style="border-radius:50%;" height="70px" id="postImg" src="https://media.licdn.com/dms/image/v2/D4E03AQEuBqUHxPJkCw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726583741411?e=1732147200&v=beta&t=NEA5oKdc2LFD-E1tmdjejENN1mypay6E7tqKw_NMkwI"
+                            alt="Profile picture"> Naveed Ahmed<br></h5>
+                    <hr>
+                    <h3>${blogTitle.value}</h3>
+                        <p class="card-text">
+                        ${blogDescription.value}
+                        </p>
+                </div>
+                <img src=${localStorage.getItem("Blog Image")}
+                    class="card-img-top" alt="..."><br>
+            </div>
+
+            <div class="card" style="width: 30rem;">
+                <div class="card-body">
+                    <h5 class="card-title"> <img style="border-radius:50%;" height="70px" id="postImg" src="https://media.licdn.com/dms/image/v2/D4E03AQEuBqUHxPJkCw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726583741411?e=1732147200&v=beta&t=NEA5oKdc2LFD-E1tmdjejENN1mypay6E7tqKw_NMkwI"
+                            alt="Profile picture"> Naveed Ahmed<br></h5>
+                    <hr>
+                    <h3>${blogTitle.value}</h3>
+                        <p class="card-text">
+                        ${blogDescription.value}
+                        </p>
+                </div>
+                <img src=${localStorage.getItem("Blog Image")}
+                    class="card-img-top" alt="..."><br>
+            </div>
+
+            <div class="card" style="width: 30rem;">
+                <div class="card-body">
+                    <h5 class="card-title"> <img style="border-radius:50%;" height="70px" id="postImg" src="https://media.licdn.com/dms/image/v2/D4E03AQEuBqUHxPJkCw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726583741411?e=1732147200&v=beta&t=NEA5oKdc2LFD-E1tmdjejENN1mypay6E7tqKw_NMkwI"
+                            alt="Profile picture"> Naveed Ahmed<br></h5>
+                    <hr>
+                    <h3>${blogTitle.value}</h3>
+                        <p class="card-text">
+                        ${blogDescription.value}
+                        </p>
+                </div>
+                <img src=${localStorage.getItem("Blog Image")}
+                    class="card-img-top" alt="..."><br>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="container main">
+        <div id="blogs" class="row row-cols-1 row-cols-md-3 g-4">
+
+            <div class="col">
+                <div class="card" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <div class="info1">
+                                <img style="border-radius:50%;" height="70px" id="postImg"
+                                    src="https://media.licdn.com/dms/image/v2/D4E03AQEuBqUHxPJkCw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726583741411?e=1732147200&v=beta&t=NEA5oKdc2LFD-E1tmdjejENN1mypay6E7tqKw_NMkwI"
+                                    alt="Profile picture">
+                            </div>
+                            <div class="info2">
+                                <span>Naveed Ahmed</span><br><span>Posted on Sunday, 29 September 2024</span>
+                            </div>
+                        </h5>
+                        <hr>
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, eos
+                            tenetur unde obcaecati dolore corrupti libero et minima cumque nulla quam, aut, illum
+                            voluptas deleniti magnam dolores? Odio, velit eveniet.</p>
+                        <img src="https://media.licdn.com/dms/image/v2/D4E03AQEuBqUHxPJkCw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1726583741411?e=1732147200&v=beta&t=NEA5oKdc2LFD-E1tmdjejENN1mypay6E7tqKw_NMkwI"
+                            class="card-img-top" alt="...">
+                    </div>
+                </div>
+            </div><br>
+
+        </div>
+    </section>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+<script src="../script/feed.js" type="module"></script>
+
+</html>

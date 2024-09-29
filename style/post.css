@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#8af00c;
+    background-color:rgb(20, 20, 20);
+    font-weight: bold;
+}
+
+h3{
+    font-family: "Pacifico", cursive;
+    font-size: 40px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+ 
+.post button{
+    width: 100%;
+}
+
+.sign{margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: black;
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px ;
+    box-shadow: 0 0 10px #8af00c;
+}
+
+.sign ::placeholder {
+    color: white;
+}
+
+.sign input {
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+
+.sign input:focus {
+    background-color: black;
+    color: white;
+}
+
+h6{
+    color: white;
+}
+
+.person{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+select{
+    border: 1px solid #8af00c;
+    border-radius: 5px;
+    background-color: black;
+    color:white;
+}
+
+.btn-danger{
+width: auto;
+}
+
+.close{
+    cursor: pointer;
+}
+
+.tex textarea{
+    background: black;
+    color: white;
+}
+
+.error1, .error2{
+    color: rgb(244, 6, 6);
+    font-weight: 500;
+    display: none;
+}
+
+.wholeBody{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main .card-text{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

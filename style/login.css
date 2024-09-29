@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#8af00c;
+    background-color:rgb(20, 20, 20);
+    font-weight: bold;
+}
+
+h3{
+    font-family: "Pacifico", cursive;
+    font-size: 40px;
+
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+button{
+    width: 100%;
+}
+
+.sign{
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px ;
+    box-shadow: 0 0 10px #8af00c;
+}
+
+.sign ::placeholder {
+    color: white;
+}
+
+.sign input {
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+
+.sign input:focus {
+    background-color: black;
+    color: white;
+}
+
+.error1,.error2{
+    display: none;
+    color: red;
+}

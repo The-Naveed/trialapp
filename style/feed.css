@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #8af00c;
+    background-color: rgb(20, 20, 20);
+    font-weight: bold;
+}
+
+h3 {
+    font-family: "Pacifico", cursive;
+    font-size: 30px;
+}
+
+h2 {
+    color: white;
+}
+
+.usersec {
+    margin: auto;
+    padding: 10px;
+    width: 90%;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #8af00c;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.usersec h3 {
+    color: white;
+}
+
+.mian {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid black;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    display: flex;
+    justify-content:right;
+    align-items: center;
+    gap: 15px;
+    margin:0;
+    padding: 0;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
